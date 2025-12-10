@@ -50,4 +50,8 @@
     * The model performs well for a simple logistic regression.
     * High precision for predicting non-survivors.
     * Good recall for identifying survivors depending on feature balance.
+    
+   Classifiaction Report
+  ![Classifiaction Report](Clssification_Report.png)
+    
   
