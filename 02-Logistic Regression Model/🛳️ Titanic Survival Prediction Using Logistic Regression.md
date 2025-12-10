@@ -11,15 +11,43 @@
 
 🔎 2. Approach Followed
   ✔ Data Exploration
+   Inspected columns, missing values, and basic dataset structure.Performed EDA to analyze:
+   Gender vs Survival
   
-  Inspected columns, missing values, and basic dataset structure.Performed EDA to analyze:
+   ![Gender vs Survival](Gender_vs_Survival_SS.png)
   
-  Gender vs Survival
+   ✔ Data Cleaning & Preparation
+    Filled missing Age, Cabin, and Embarked values.Converted categorical features to numerical encodings.Selected relevant features for the model.
+    Age distributions
 
-  ![Gender_v/s_Survival][]
+   ![Age Distribution](Age_Distribution.png)
+
+   ✔ Building the Logistic Regression Model
+    Split the dataset into training and testing sets.Trained a Logistic Regression model on selected features.Evaluated the model using:
+    Confusion Matrix
+    
+  ![Confusion Matrix](Confusion_Matrix.png)
+
+  Accuracy Score and Classification Report
+
+  ✔ Interpreting the Model
+    Extracted coefficients to understand how each feature impacts survival probability.
+
+💡 3. Insights Gained
+  🧍‍♀️ Gender is a major predictor
+   - Female passengers had a much higher likelihood of survival.
+  🛏️ Passenger Class strongly influences survival
+   - First-class passengers had the highest survival rate.
+   - Third-class passengers had the lowest.
+  🎒 Age plays an important role
+   - Children and younger passengers had better survival chances.
+   - Older age groups were less likely to survive.
+  ⚓ Fare & Embarkation patterns
+   - Higher fares → higher survival (correlated with higher classes).
+   - Embarkation port had minor but noticeable trends.
   
-  Passenger Class trends
+  🧠 Model Performance
+    * The model performs well for a simple logistic regression.
+    * High precision for predicting non-survivors.
+    * Good recall for identifying survivors depending on feature balance.
   
-  Fare and Age distributions
-  
-  Correlation patterns
