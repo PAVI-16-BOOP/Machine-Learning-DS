@@ -34,11 +34,6 @@ Based on the statistical analysis and regression coefficients:
   Both contribute, but with different strengths:
     -Time on App generally shows a slightly stronger positive correlation with spending than Time on Website.
     -Website traffic may be higher, but app engagement seems more efficient (higher spend per unit time).
-    
-![lmplot](Screenshot%202025-12-10%20134405.png)
-
-
-
 
 📊 Avg. Session Length
   While not the strongest predictor, the trend you observed is correct:
