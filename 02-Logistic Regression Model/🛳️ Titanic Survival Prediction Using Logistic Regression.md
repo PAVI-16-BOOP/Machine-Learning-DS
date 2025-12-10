@@ -52,6 +52,6 @@
     * Good recall for identifying survivors depending on feature balance.
     
    Classifiaction Report
-  ![Classifiaction Report](Clssification_Report.png)
+  ![Classifiaction Report](Classification_Report.png)
     
   
