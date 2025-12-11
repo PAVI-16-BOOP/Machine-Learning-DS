@@ -19,8 +19,8 @@
     ✔ Data Exploration & Visualization
     
       Compared FICO score distributions between borrowers who met vs. failed credit policy.
-      ![FICO Score Histogram])
-     
+      ![FICO Score Histogram]("03-Decision_Tree and Random_Forest/Double_FICO_score_Histogram.png")
+
       Analyzed how interest rate varies with FICO score, credit policy, and repayment status.Observed strong risk signals: lower FICO and higher interest rate correlate with higher chance of default.
     
     ✔ Data Preprocessing
