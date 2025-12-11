@@ -20,9 +20,10 @@
     
       Compared FICO score distributions between borrowers who met vs. failed credit policy.
 
-      FICO   v/s Failed credit policy
 
-      ![ FICO   v/s Failed credit policy][Double_FICO_score_Histogram]
+      ![FICO Score Histogram](Double_FICO_score_Histogram.png)
+
+
 
       
       Analyzed how interest rate varies with FICO score, credit policy, and repayment status.
