@@ -19,48 +19,26 @@
     ✔ Data Exploration & Visualization
     
       Compared FICO score distributions between borrowers who met vs. failed credit policy.
-
-
-      ![FICO Score Histogram](Double_FICO_score_Histogram.png)
-
-
-
-      
-      Analyzed how interest rate varies with FICO score, credit policy, and repayment status.
-      
-      Observed strong risk signals: lower FICO and higher interest rate correlate with higher chance of default.
+      ![FICO Score Histogram])
+     
+      Analyzed how interest rate varies with FICO score, credit policy, and repayment status.Observed strong risk signals: lower FICO and higher interest rate correlate with higher chance of default.
     
     ✔ Data Preprocessing
     
-      Removed/handled missing values as required.
-      
-      Converted categorical features (e.g., purpose) to dummy/one-hot variables.
-      
+      Removed/handled missing values as required. Converted categorical features (e.g., purpose) to dummy/one-hot variables.
       Split data into training and testing sets.
       
     ✔ Model Training
     
       Two ML models were evaluated:
       
-      Decision Tree Classifier
-      
-      Simple baseline model.
-      
-      Helps understand key decision rules the model learns.
-      
-      Random Forest Classifier
-      
-      Ensemble of multiple decision trees.
-      
-      Used bootstrapping + random feature selection to reduce overfitting.
-      
-      Achieved better generalization and accuracy compared to a single tree.
+      -Decision Tree Classifier:Simple baseline model. Helps understand key decision rules the model learns.
+      -Random Forest Classifier:Ensemble of multiple decision trees. Used bootstrapping + random feature selection to reduce overfitting.
+       Achieved better generalization and accuracy compared to a single tree.
     
     ✔ Model Evaluation
     
-      Compared predictions on the test set.
-      
-      Evaluated using metrics such as accuracy, confusion matrix, and classification report.
+      Compared predictions on the test set.Evaluated using metrics such as accuracy, confusion matrix, and classification report.
 
 3. Insights Gained
   🔹 FICO score strongly impacts repayment
