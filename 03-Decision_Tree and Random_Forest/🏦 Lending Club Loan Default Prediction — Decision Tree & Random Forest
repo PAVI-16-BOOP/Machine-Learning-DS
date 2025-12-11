@@ -1,0 +1,111 @@
+1. Background & Problem Statement
+
+  LendingClub connects borrowers seeking loans with investors who fund them. As an investor, the key question is simple: “Will this borrower pay me back?”
+  This project uses publicly available LendingClub data (2007–2010) to build predictive models that estimate whether a borrower will fully repay the loan or default.
+  The dataset includes borrower credit profiles such as:
+  
+  fico (credit score)
+  int.rate (interest rate)
+  credit.policy (whether borrower meets LendingClub underwriting rules)
+  purpose of loan
+  not.fully.paid (target variable),etc.
+  
+  The goal is to explore the factors influencing defaults and build ML models — Decision Tree and Random Forest — to classify borrowers into defaulters and non-defaulters.
+
+2. Approach Followed
+
+  The workflow for this project was:
+  
+    ✔ Data Exploration & Visualization
+    
+      Compared FICO score distributions between borrowers who met vs. failed credit policy.
+
+      FICO   v/s Failed credit policy
+
+      ![ FICO   v/s Failed credit policy][Double_FICO_score_Histogram]
+
+      
+      Analyzed how interest rate varies with FICO score, credit policy, and repayment status.
+      
+      Observed strong risk signals: lower FICO and higher interest rate correlate with higher chance of default.
+    
+    ✔ Data Preprocessing
+    
+      Removed/handled missing values as required.
+      
+      Converted categorical features (e.g., purpose) to dummy/one-hot variables.
+      
+      Split data into training and testing sets.
+      
+    ✔ Model Training
+    
+      Two ML models were evaluated:
+      
+      Decision Tree Classifier
+      
+      Simple baseline model.
+      
+      Helps understand key decision rules the model learns.
+      
+      Random Forest Classifier
+      
+      Ensemble of multiple decision trees.
+      
+      Used bootstrapping + random feature selection to reduce overfitting.
+      
+      Achieved better generalization and accuracy compared to a single tree.
+    
+    ✔ Model Evaluation
+    
+      Compared predictions on the test set.
+      
+      Evaluated using metrics such as accuracy, confusion matrix, and classification report.
+
+3. Insights Gained
+  🔹 FICO score strongly impacts repayment
+  
+    Borrowers with higher FICO scores:
+    
+    Get lower interest rates
+    
+    Are more likely to repay their loans
+    
+    Are mostly approved under credit.policy = 1
+    
+    Those with lower scores show higher default rates.
+    
+  🔹 Higher interest rates correlate with higher default probability
+  
+    Even for borrowers passing the credit policy, high interest rates increase risk.
+    
+  🔹 Borrowers who fail credit policy (credit.policy = 0) are much riskier
+  
+    They cluster around:
+    
+    Lower FICO
+    
+    Higher interest
+    
+    Higher default rates
+  
+  🔹 Random Forest outperformed Decision Tree
+  
+    Better handling of noise and non-linearity
+    
+    Reduced overfitting
+    
+    Gave more stable predictions
+    
+  🔹 Feature importance
+  
+    Random Forest identified:
+    
+    fico
+    
+    int.rate
+    
+    credit.policy
+    
+    purpose
+    
+    as the strongest predictors of default.
