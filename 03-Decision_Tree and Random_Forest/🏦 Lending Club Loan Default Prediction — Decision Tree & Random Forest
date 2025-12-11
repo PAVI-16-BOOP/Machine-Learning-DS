@@ -20,8 +20,11 @@
     
       Compared FICO score distributions between borrowers who met vs. failed credit policy.
 
-     ![FICO Score Histogram]("03-Decision_Tree and Random_Forest/Double_FICO_score_Histogram.png")
+     ![FICO Score Histogram](Double_FICO_score_Histogram.png)
 
+      The counts of loans by purpose
+
+     ![Countplot of Loan by Purpose](Countplot_Loan by Purpose.png)
 
       Analyzed how interest rate varies with FICO score, credit policy, and repayment status.Observed strong risk signals: lower FICO and higher interest rate correlate with higher chance of default.
     
@@ -43,50 +46,20 @@
       Compared predictions on the test set.Evaluated using metrics such as accuracy, confusion matrix, and classification report.
 
 3. Insights Gained
+
   🔹 FICO score strongly impacts repayment
+     Borrowers with higher FICO scores : Get lower interest rates.Are more likely to repay their loans.Are mostly approved under credit.policy = 1.Those with lower scores show higher default rates.
+    
+  🔹 Higher interest rates correlate with higher default probability : Even for borrowers passing the credit policy, high interest rates increase risk.
+    
+  🔹 Borrowers who fail credit policy (credit.policy = 0) are much riskier : They cluster around : Lower FICO, Higher interest , Higher default rates
   
-    Borrowers with higher FICO scores:
+  🔹 Random Forest outperformed Decision Tree : Better handling of noise and non-linearity , Reduced overfitting , Gave more stable predictions
     
-    Get lower interest rates
-    
-    Are more likely to repay their loans
-    
-    Are mostly approved under credit.policy = 1
-    
-    Those with lower scores show higher default rates.
-    
-  🔹 Higher interest rates correlate with higher default probability
-  
-    Even for borrowers passing the credit policy, high interest rates increase risk.
-    
-  🔹 Borrowers who fail credit policy (credit.policy = 0) are much riskier
-  
-    They cluster around:
-    
-    Lower FICO
-    
-    Higher interest
-    
-    Higher default rates
-  
-  🔹 Random Forest outperformed Decision Tree
-  
-    Better handling of noise and non-linearity
-    
-    Reduced overfitting
-    
-    Gave more stable predictions
-    
-  🔹 Feature importance
-  
-    Random Forest identified:
-    
-    fico
-    
-    int.rate
-    
-    credit.policy
-    
-    purpose
+  🔹 Feature importance : Random Forest identified:
+    _ fico
+    _ int.rate
+    _ credit.policy
+    _ purpose
     
     as the strongest predictors of default.
