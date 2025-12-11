@@ -20,11 +20,13 @@
     
       Compared FICO score distributions between borrowers who met vs. failed credit policy.
 
-     ![FICO Score Histogram](Double_FICO_score_Histogram.png)
+    ![FICO Score Histogram]("03-Decision_Tree and Random_Forest/Double_FICO_score_Histogram.png")
+
 
       The counts of loans by purpose
 
-     ![Countplot of Loan by Purpose](Countplot_Loan by Purpose.png)
+   ![Loan Purpose Countplot]("03-Decision_Tree and Random_Forest/Countplot_Loan by Purpose.png")
+
 
       Analyzed how interest rate varies with FICO score, credit policy, and repayment status.Observed strong risk signals: lower FICO and higher interest rate correlate with higher chance of default.
     
@@ -47,8 +49,7 @@
 
 3. Insights Gained
 
-  🔹 FICO score strongly impacts repayment
-     Borrowers with higher FICO scores : Get lower interest rates.Are more likely to repay their loans.Are mostly approved under credit.policy = 1.Those with lower scores show higher default rates.
+  🔹 FICO score strongly impacts repayment : Borrowers with higher FICO scores , Get lower interest rates.Are more likely to repay their loans.Are mostly approved under credit.policy = 1.Those with lower scores show higher default rates.
     
   🔹 Higher interest rates correlate with higher default probability : Even for borrowers passing the credit policy, high interest rates increase risk.
     
