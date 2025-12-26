@@ -18,7 +18,7 @@
   2) Statistics: It groups by movie title to compute each movie’s average rating and total number of ratings. For example, “Star Wars (1977)” has 584 ratings (mean ~4.36) and
       “Liar Liar (1997)” has 485 ratings.
 
-     !
+     ![Joint Plot of Number of Ratings v/s Actual Rating](JointPlot.png)
   
   4) User–Item Matrix: A pivot table (moviemat) is created with users as rows and movie titles as columns (entries are ratings). Missing ratings are NaN.
   
