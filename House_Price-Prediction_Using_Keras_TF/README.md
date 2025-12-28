@@ -40,6 +40,7 @@ Extreme price values can heavily skew a regression model.
 To reduce their impact:
 
   - The top ~2% of highest-priced houses are removed
+    ![Scatter Plot of Latitude v/s Longitude showing Prics as hue]()
   - Price distributions and geographic plots are revisited to confirm stability
 
 This leads to a more reliable and generalizable model.
