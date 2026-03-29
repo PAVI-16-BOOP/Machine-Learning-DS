@@ -1,4 +1,4 @@
-1. Background & Problem Statement
+** 1. Background & Problem Statement **
 
   LendingClub connects borrowers seeking loans with investors who fund them. As an investor, the key question is simple: “Will this borrower pay me back?”
   This project uses publicly available LendingClub data (2007–2010) to build predictive models that estimate whether a borrower will fully repay the loan or default.
@@ -12,7 +12,7 @@
   
   The goal is to explore the factors influencing defaults and build ML models — Decision Tree and Random Forest — to classify borrowers into defaulters and non-defaulters.
 
-2. Approach Followed
+** 2. Approach Followed **
 
   The workflow for this project was:
   
@@ -47,7 +47,7 @@
     
       Compared predictions on the test set.Evaluated using metrics such as accuracy, confusion matrix, and classification report.
 
-3. Insights Gained
+** 3. Insights Gained ** 
 
   🔹 FICO score strongly impacts repayment : Borrowers with higher FICO scores , Get lower interest rates.Are more likely to repay their loans.Are mostly approved under credit.policy = 1.Those with lower scores show higher default rates.
     
